@@ -1,6 +1,6 @@
 ﻿{
   "webroot": "wwwroot",
-  "userSecretsId": "aspnet5-PushMe-2bec4c7c-03e5-4456-88ca-1ad4ea94c2cc",
+  "userSecretsId": "aspnet5-PushMe-e33cbabc-b913-48bf-b9af-06c9d6f84d43",
   "version": "1.0.0-*",
 
   "dependencies": {
