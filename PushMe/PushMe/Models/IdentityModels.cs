@@ -3,6 +3,10 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using PushMe.Migrations;
+ 
+ 
+ 
 
 namespace PushMe.Models
 {
@@ -24,7 +28,11 @@ namespace PushMe.Models
             : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
-
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<ApplicationDbContext, Configuration>());
+            base.OnModelCreating(modelBuilder);
+        }
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
