@@ -1,0 +1,10 @@
+{
+  "AppSettings": {
+    "SiteTitle": "PushMe"
+  },
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-PushMe-2bec4c7c-03e5-4456-88ca-1ad4ea94c2cc;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  }
+}
